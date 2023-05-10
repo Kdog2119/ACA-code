@@ -1,7 +1,7 @@
 console.log('The encryptor js file loaded');
 
-const letters = 'abcdefghijklmnopqrstuvwxyz';
-const encrypt_key = 'bcdefghijklmnopqrstuvwxyza';
+const letters =     'abcdefghijklmnopqrstuvwxyz!?.';
+const encrypt_key = 'bcdefghijklmnopqrstuvwxyza123';
 
 function encrypt(text) {
     let result = '';
@@ -17,4 +17,7 @@ function encrypt(text) {
       else {
         result += encrypt_key[letterIndex]
       }
-}
+    }
+    
+    return result;
+}// encrypt
