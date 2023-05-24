@@ -65,7 +65,7 @@ encryptForm.addEventListener('submit', function(e) {
 
 
 // add event listener to the form
-const encryptForm = document.getElementById('decrypt-form');
+const decryptForm = document.getElementById('decrypt-form');
 decryptForm.addEventListener('submit', function(e) {
   e.preventDefault();
   
@@ -73,10 +73,10 @@ decryptForm.addEventListener('submit', function(e) {
   let messageElement = document.getElementById('decrypt');
   let message = messageElement.value;
   
-  // encrypt the content
-  let encrypted = decrypt(message);
+  // decrypt the content
+  let decrypted = decrypt(message);
   
-  // display encrypted message in p element
+  // display decrypted message in p element
   let decodedMessageElement = document.getElementById('decoded-message');
   encodedMessageElement.innerText = decrypted;
 });
